@@ -49,7 +49,7 @@ class Dog
   def self.find_by_id(id: id)
     sql = <<-SQL
         SELECT *
-        FROM students
+        FROM dogs
         WHERE id = ?
         LIMIT 1
         SQL
